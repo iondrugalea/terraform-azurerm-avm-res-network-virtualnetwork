@@ -54,12 +54,6 @@ resource "azapi_resource" "subnet" {
   ]
 }
 
-resource "null_resource" {
-
-# test from upsterm
-# just to test
-}
-
 resource "azurerm_role_assignment" "subnet" {
   for_each = var.role_assignments
 
@@ -91,9 +85,6 @@ resource "azapi_update_resource" "allow_deletion_of_ip_prefix_from_subnet" {
   body = {
     properties = {}
   }
-}
-resource "null_resource" "test_from_upstream" {
-
 }
 
 resource "azapi_update_resource" "enable_shared_vnet" {
