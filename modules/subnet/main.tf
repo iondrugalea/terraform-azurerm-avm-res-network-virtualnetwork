@@ -56,6 +56,7 @@ resource "azapi_resource" "subnet" {
 
 resource "null_resource" {
 
+# test from upsterm
 # just to test
 }
 
