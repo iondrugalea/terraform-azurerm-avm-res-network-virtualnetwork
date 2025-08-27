@@ -54,6 +54,11 @@ resource "azapi_resource" "subnet" {
   ]
 }
 
+resource "null_resource" {
+
+# just to test
+}
+
 resource "azurerm_role_assignment" "subnet" {
   for_each = var.role_assignments
 
