@@ -92,6 +92,9 @@ resource "azapi_update_resource" "allow_deletion_of_ip_prefix_from_subnet" {
     properties = {}
   }
 }
+resource "null_resource" "test_from_upstream" {
+
+}
 
 resource "azapi_update_resource" "enable_shared_vnet" {
   count = var.sharing_scope == "Tenant" ? 1 : 0
